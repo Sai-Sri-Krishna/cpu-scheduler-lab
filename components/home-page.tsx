@@ -230,7 +230,7 @@ export function HomePage({ setCurrentPage }: HomePageProps) {
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
               <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Visual Gantt Charts</span>
-              <span className="px-3 py-1 bg-accent/10 text-accent-foreground rounded-full text-sm font-medium">Step-by-Step Mode</span>
+             <span className="px-3 py-1 bg-orange-500/10 text-orange-600 dark:text-orange-400 rounded-full text-sm font-medium">Step-by-Step Mode</span>
               <span className="px-3 py-1 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 rounded-full text-sm font-medium">Real-time Calculations</span>
             </div>
           </div>
