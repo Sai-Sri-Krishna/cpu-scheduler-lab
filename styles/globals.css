@@ -123,3 +123,30 @@
     @apply bg-background text-foreground;
   }
 }
+/* Simulator State Styles */
+.process-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.state-running {
+    border-color: #3b82f6; /* Bright Blue */
+    animation: pulse-border 1.5s infinite;
+}
+
+.state-ready {
+    border-color: #10b981; /* Success Green */
+    background-color: rgba(16, 185, 129, 0.1);
+}
+
+.state-waiting {
+    border-color: #6b7280; /* Neutral Gray */
+    border-style: dashed;
+    opacity: 0.7;
+}
+
+@keyframes pulse-border {
+    0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
