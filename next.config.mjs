@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath:'/cpu-schedular-lab',
+  basePath: '/cpu-scheduler-lab',
+  assetPrefix: '/cpu-scheduler-lab', 
   trailingSlash: true,
   images: {
     unoptimized: true,
