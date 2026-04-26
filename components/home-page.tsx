@@ -138,7 +138,7 @@ export function HomePage({ setCurrentPage }: HomePageProps) {
             <div className="relative w-full aspect-square max-w-lg mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-3xl blur-3xl" />
               <img 
-                src="/images/cpu-chip.jpg" 
+                src="/cpu-scheduler-lab/images/cpu-chip.jpg" 
                 alt="CPU Processor Visualization"
                 className="relative rounded-3xl shadow-2xl border border-white/10 w-full h-full object-cover"
                 loading="lazy"
