@@ -578,7 +578,12 @@ export function CalculatorPage() {
               <CardContent>
                 {ganttChart.length > 0 ? (
                   <div className="space-y-4">
-                    <div className="overflow-x-auto">
+                    <div 
+  id="gantt-chart" 
+  role="graphics-document" 
+  aria-label="CPU Scheduling Timeline" 
+  className="overflow-x-auto"
+>
                       <div className="min-w-full">
                         <div className="flex h-14 rounded-lg overflow-hidden border border-border">
                           {ganttChart.map((block, idx) => {
@@ -586,6 +591,8 @@ export function CalculatorPage() {
                             return (
                               <div
                                 key={idx}
+                                role="img"
+                                aria-label={`Process ${block.process} from time ${block.start} to ${block.end}`}
                                 className={`${processColors[block.process] || 'bg-gray-500'} flex items-center justify-center text-white text-sm font-medium relative group cursor-pointer transition-opacity hover:opacity-90`}
                                 style={{ width: `${Math.max(width, 3)}%` }}
                               >
