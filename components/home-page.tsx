@@ -94,7 +94,7 @@ export function HomePage({ setCurrentPage }: HomePageProps) {
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-          style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+          style={{ backgroundImage: "url('/cpu-scheduler-lab/images/hero-bg.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent" />
@@ -178,7 +178,7 @@ export function HomePage({ setCurrentPage }: HomePageProps) {
         <div className="absolute inset-0 opacity-5">
           <div 
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/process-queue.jpg')" }}
+            style={{ backgroundImage: "url('/cpu-scheduler-lab/images/process-queue.jpg')" }}
           />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -260,7 +260,7 @@ export function HomePage({ setCurrentPage }: HomePageProps) {
         {/* Background Pattern */}
         <div 
           className="absolute inset-0 opacity-10 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/simulator-visual.jpg')" }}
+          style={{ backgroundImage: "url('/cpu-scheduler-lab/images/simulator-visual.jpg')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
