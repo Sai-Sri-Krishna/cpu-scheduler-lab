@@ -455,33 +455,36 @@ export function CalculatorPage() {
                     <div className="grid grid-cols-3 gap-2">
                       <div>
                         <Label className="text-xs text-muted-foreground">Arrival</Label>
-                        <Input
-                          type="number"
-                          min="0"
-                          value={process.arrival}
-                          onChange={(e) => updateProcess(index, "arrival", parseInt(e.target.value) || 0)}
-                          className="h-9"
-                        />
+                        <Input 
+                              type="number" 
+                              min="0" 
+                              value={process.arrival} 
+                              onChange={(e) => updateProcess(index, "arrival", parseInt(e.target.value) || 0)} 
+                              className="h-9"
+                              required 
+                          />
                       </div>
                       <div>
                         <Label className="text-xs text-muted-foreground">Burst</Label>
-                        <Input
-                          type="number"
-                          min="1"
-                          value={process.burst}
-                          onChange={(e) => updateProcess(index, "burst", parseInt(e.target.value) || 1)}
-                          className="h-9"
-                        />
+                        <Input 
+  type="number" 
+  min="1" 
+  value={process.burst} 
+  onChange={(e) => updateProcess(index, "burst", parseInt(e.target.value) || 1)} 
+  className="h-9"
+  required 
+/>
                       </div>
                       <div>
                         <Label className="text-xs text-muted-foreground">Priority</Label>
-                        <Input
-                          type="number"
-                          min="1"
-                          value={process.priority}
-                          onChange={(e) => updateProcess(index, "priority", parseInt(e.target.value) || 1)}
-                          className="h-9"
-                        />
+                        <Input 
+  type="number" 
+  min="1" 
+  value={process.priority} 
+  onChange={(e) => updateProcess(index, "priority", parseInt(e.target.value) || 1)} 
+  className="h-9"
+  required 
+/>
                       </div>
                     </div>
                   </div>
