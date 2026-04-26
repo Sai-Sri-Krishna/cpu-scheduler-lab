@@ -40,6 +40,11 @@ export default function RootLayout({
           <Analytics />
         </ThemeProvider>
       </body>
+      <footer className="w-full py-6 text-center border-t mt-auto">
+  <p className="text-sm text-muted-foreground">
+    crafted by <span className="font-semibold text-primary">VVNSSK</span>
+  </p>
+</footer>
     </html>
   )
 }
